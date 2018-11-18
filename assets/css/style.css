@@ -1,0 +1,41 @@
+body {
+    background: url("../images/today.jpg") no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+h1 {
+    font-size: 110px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00bbbb, 0 0 30px #00bbbb, 0 0 40px #00bbbb, 0 0 55px #00bbbb, 0 0 75px #00bbbb;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 10px;
+}
+
+button {
+    border-radius: 2px;
+}
+
+#buttons img {
+    width: 100px;
+}
+
+
+.drinkImages {
+    width: auto;
+    height: 100px;
+}
+
+.row.no-margin {
+    margin-right:0;
+    margin-left:0;
+}

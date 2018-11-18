@@ -1,13 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Reset-->
+    <link rel="stylesheet" href="assets/css/reset.css">
     
+        <title>Drink Collector</title>
+</head>
+
+<body>
+    <h1>Drink Collector!</h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- There will be four crystals displayed as buttons on the page -->
+    
+    <div id="drinkCollector" class="container">
+        <div id="instructions" class="row">
+            <p>You will be given a random number at the start of the game.<br>
+            <br>
+            <p>There are four bottles below. By clicking on a bottle you will add a specific amount of shots to your total score.<br>
+            <br>
+            <p>You win the game by matching your total score to the random number of shots, you lose the game if your total score goes above the random number of shots.<br>
+            <br>
+            <p>The value of each bottle is hidden from you until you click on it.<br>
+            <br>
+            <p>Each time when the game starts, the game will change the values of each bottle.</p>
+        </div>
+        
+        <div id="numberOfShots" class="row no-margin">
+            <div class="col-sm-3">
+                <p>Drink these Shots: <span id="randomNumber"></span></p>
+            </div>
+            <div id="score" class="col-sm-3">
+                <p>Wins: <span id="win"></span></p>
+                <p>Losses: <span id="losses"></span></p>
+            </div>
+        </div>
+        
+        <div id="buttons" class="row no-margin">
+            <div class="col-sm-3">
+                <button value="9" type="laphroaig"><img id="laphroaig" class="drinkImages" src="assets/images/laphroaig.png"></button>
+            </div>
+            <div class="col-sm-3">
+                <button value="2" type="jameson"><img id="jameson" class="drinkImages" src="assets/images/jameson.png"></button>
+            </div>
+            <div class="col-sm-3">
+                <button value="3" type="vodka"><img id="vodka" class="drinkImages" src="assets/images/vodka.png"></button>
+            </div>
+            <div class="col-sm-3">
+                <button value="8" type="barcardi"><img id="bacardi" class="drinkImages" src="assets/images/bacardi.png"></button>
+            </div>
+        </div>
+        
+        <div id="myScore" class="row">
+            <div class="col-sm-6">
+                <p>Shots Taken: <span id="currentScore"></span></p>
+            </div>
+        </div>
+        
+    </div>
+    <!-- <button type="laphroaig"><img id="laphroaig" class="drinkImages" src="assets/images/laphroaig.jpg"></button>
+    <button type="jameson"><img id="jameson" class="drinkImages" src="assets/images/jameson.png"></button>
+    <button type="vodka"><img id="vodka" class="drinkImages" src="assets/images/vodka.png"></button>
+    <button type="barcardi"><img id="bacardi" class="drinkImages" src="assets/images/bacardi.png"></button> -->
+
     <script src="assets/javascript/game.js"></script>
 </body>
 
