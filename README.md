@@ -1,6 +1,6 @@
 # Drink Collector! #
 
-Drink as many shots as you can without going over the "party" limit. Are you a light weight? :tropical_drink::cocktail:
+Drink as many shots as you can without going over the "party" limit. Are you a lightweight or life of the party? :tropical_drink::cocktail:
 
 ## What this project does ## 
 
